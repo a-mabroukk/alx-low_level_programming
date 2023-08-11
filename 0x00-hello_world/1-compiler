@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE  $(echo "$CFILE | mv $CFILE.c $CFILE.o")   
+gcc -c $CFILE  $(echo $CFILE | mv $CFILE.c $CFILE.o)   
