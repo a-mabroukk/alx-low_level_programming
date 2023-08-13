@@ -10,13 +10,12 @@
 
 int main(void)
 {
-	char n = 0;
+	char num;
 
-	while (n < 10)
+	while (num < 10)
 	{
-		putchar(n);
-		n++;
+		printf("%d \n", num);
+		num++;
 	}
-	putchar('\n');
 	return (0);
 }
