@@ -9,6 +9,8 @@
 
 void jack_bauer(void)
 {
+	int min;
+
 	for (min = 00 : 00; min <= 23 : 59; min++)
 	{
 		while (min >= 00 : 00 && min <= 23 : 59)
