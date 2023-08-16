@@ -8,9 +8,9 @@
 
 void times_table(void)
 {
-	int num1 = 9, num2;
+	int num1 = '9', num2;
 
-	while (num1 = 9)
+	while (num1 == 9)
 	{
 		for (num2 = 0; num2 <= 9; num2++)
 		{
