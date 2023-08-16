@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	for (min = 0; min <= 60; min++)
 	{
-		while (min >= 0 && min <= 60)
+		while (min >= 0 || min <= 60)
 		{
 			_putchar(min);
 		}
