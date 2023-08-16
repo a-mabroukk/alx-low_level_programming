@@ -20,12 +20,12 @@ void times_table(void)
 
 			prod = num * mult;
 
-			while (prod <= 9)
-			{
+			if (prod <= 9)
 				_putchar(' ');
+
+			else
 				_putchar((prod / 10) + '0');
 				_putchar((prod % 10) + '0');
-			}
 		}
 		_putchar('\n');
 	}
