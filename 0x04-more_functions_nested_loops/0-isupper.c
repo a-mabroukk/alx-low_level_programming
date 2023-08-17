@@ -18,10 +18,11 @@ int _isupper(int c)
 	{
 		for (c = 'A'; c <= 'Z'; c++)
 		{
-			_purchar(c);
 			return (1);
 		}
 	}
 	else
+	{
 		return (0);
+	}
 }
