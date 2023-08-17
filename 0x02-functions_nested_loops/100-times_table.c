@@ -6,7 +6,6 @@
  * @n: The number to be print
  *
  * Description: Write a function that prints the n times table
- *
  */
 
 void print_times_table(int n)
