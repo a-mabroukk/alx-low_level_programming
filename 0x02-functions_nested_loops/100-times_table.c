@@ -7,7 +7,6 @@
  *
  * Description: Write a function that prints the n times table
  *
- * Return: results
  */
 
 void print_times_table(int n)
