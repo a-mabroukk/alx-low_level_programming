@@ -22,7 +22,7 @@ int _isupper(int c)
 			return (1);
 		}
 	}
-	else if !((c >= 'A') && (c <= 'Z'))
+	else if (!(c >= 'A') && (c <= 'Z'))
 	{
 		_putchar(c);
 		return (0);
