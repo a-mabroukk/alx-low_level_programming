@@ -9,11 +9,10 @@
 void more_numbers(void)
 {
 	int count = 0;
-	int num;
+	int num = 0;
 
 	for (count = 0; count <= 9; count++)
 	{
-		num = 0;
 		while (num <= 14)
 		{
 			if (num > 9)
