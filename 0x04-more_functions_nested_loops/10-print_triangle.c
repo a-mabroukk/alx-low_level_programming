@@ -20,8 +20,14 @@ void print_triangle(int size)
 		for (hight = 1; hight <= size; hight++)
 		{
 			for (base = 1; base <= size; base++)
-			_putchar('#');
-			_putchar('\n');
+			{
+				space = hight + base;
+				if (space >= size)
+				{
+				_putchar('#');
+				_putchar('\n');
+				}
+			}
 		}
 	}
 }
