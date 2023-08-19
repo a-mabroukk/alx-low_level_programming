@@ -12,7 +12,7 @@
 
 void print_triangle(int size)
 {
-	int hight, base, space;
+	int hight, base;
 
 	if (size <= 0)
 	{
@@ -20,15 +20,8 @@ void print_triangle(int size)
 		for (hight = 1; hight <= size; hight++)
 		{
 			for (base = 1; base <= size; base++)
-			{
-				space = hight + base;
-				if (space <= size)
-				{
-				_putchar('#');
-				_putchar(' ');
-				}
-			}
-				_putchar('\n');
+			_putchar('#');
+			_putchar('\n');
 		}
 	}
 }
