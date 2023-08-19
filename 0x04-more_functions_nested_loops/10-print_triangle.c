@@ -20,12 +20,12 @@ void print_triangle(int size)
 	{
 		for (row = 1; row <= size; row++)
 		{
+			for (space = (size - row); space > 0; space--)
+			{
+				_putchar(' ');
+			}
 			for (column = 1; column <= row; column++)
 			{
-				for (space = (size - row); space > 0; space--)
-				{
-					_putchar(' ');
-				}
 				_putchar('#');
 			}
 			_putchar('\n');
