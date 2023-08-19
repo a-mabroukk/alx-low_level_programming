@@ -6,8 +6,6 @@
  * @size: the size of the triangle
  *
  * Description: Write a function that prints a triangle, followed by a new line
- *
- * Return: value
  */
 
 void print_triangle(int size)
@@ -20,7 +18,9 @@ void print_triangle(int size)
 		for (hight = 1; hight <= size; hight++)
 		{
 			for (base = 1; base <= size; base++)
-			_putchar('#');
+			{
+				_putchar('#');
+			}
 			_putchar('\n');
 		}
 	}
