@@ -10,21 +10,20 @@
  * Return: value
  */
 
-unsigned long _MaxPrime(unsigned long num);
+unsigned long _MaxPrime(unsigned long num)
 {
-	unsigned long CurrMaxPrime = "-1";
-	unsigned long num = 612852475143;
+	unsigned long CurrMaxPrime = -1;
 	unsigned long j = 3;
 
 	if (num % 2 == 0)
 	{
-		CurMaxPrime = 2;
+		CurrMaxPrime = 2;
 		while (num % 2 == 0)
 		{
 			num = num / 2;
 		}
 	}
-	for (j = 3; j <= sqrt(num); j++ = 2)
+	for (j = 3; j <= sqrt(num); j += 2)
 	{
 		while (num % j == 0)
 		{
@@ -40,17 +39,15 @@ unsigned long _MaxPrime(unsigned long num);
 /**
  * main - Entry point
  *
- * @num: 612852475143
- *
  * Description: prints the largest prime factor of the number
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
-int main(int num);
+int main(void)
 {
-	unsigned long num;
+	unsigned long n = 612852475143;
 
-	printf("Largest prime factor of %lu\d is: %lu\d\n", num, MaxPrime(num));
+	printf("%lu\n", _MaxPrime(n));
 	return (0);
 }
