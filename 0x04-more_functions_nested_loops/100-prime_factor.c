@@ -10,10 +10,10 @@
  * Return: value
  */
 
-long long MaxPrime(long long num);
+unsigned long MaxPrime(unsigned long num);
 {
-	long long CurrMaxPrime = "-1";
-	long long num = 612852475143;
+	unsigned long CurrMaxPrime = "-1";
+	unsigned long num = 612852475143;
 
 	if (num % 2 == 0)
 	{
@@ -23,7 +23,7 @@ long long MaxPrime(long long num);
 			num = num / 2;
 		}
 	}
-	for (long long j = 3; j <= sqrt(num); j++ = 2)
+	for (unsigned long j = 3; j <= sqrt(num); j++ = 2)
 	{
 		while (num % j == 0)
 		{
@@ -41,7 +41,7 @@ long long MaxPrime(long long num);
 
 int main(void);
 {
-	long long num;
+	unsigned long num;
 
 	num = 612852475143;
 
