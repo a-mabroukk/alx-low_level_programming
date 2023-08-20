@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * main - prints the largest prime factor of the number
+ * _MaxPrime - prints the largest prime factor of the number
  *
  * Description: program that finds the largest prime factor of the number
  *
@@ -10,10 +10,11 @@
  * Return: value
  */
 
-unsigned long MaxPrime(unsigned long num);
+unsigned long _MaxPrime(unsigned long num);
 {
 	unsigned long CurrMaxPrime = "-1";
 	unsigned long num = 612852475143;
+	unsigned long j = 3;
 
 	if (num % 2 == 0)
 	{
@@ -23,7 +24,7 @@ unsigned long MaxPrime(unsigned long num);
 			num = num / 2;
 		}
 	}
-	for (unsigned long j = 3; j <= sqrt(num); j++ = 2)
+	for (j = 3; j <= sqrt(num); j++ = 2)
 	{
 		while (num % j == 0)
 		{
@@ -36,15 +37,20 @@ unsigned long MaxPrime(unsigned long num);
 	return (CurrMaxPrime);
 }
 
+/**
+ * main - Entry point
+ *
+ * @num: 612852475143
+ *
+ * Description: prints the largest prime factor of the number
+ *
+ * Return: 0
+ */
 
-
-
-int main(void);
+int main(int num);
 {
 	unsigned long num;
 
-	num = 612852475143;
-
-	printf("Largest prime factor of %lld is: %lld\n", num, MaxPrime(num));
+	printf("Largest prime factor of %lu\d is: %lu\d\n", num, MaxPrime(num));
 	return (0);
 }
