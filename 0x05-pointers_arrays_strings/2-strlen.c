@@ -15,8 +15,5 @@ int _strlen(char *s)
 	int L;
 
 	for (L = 0; *s != '\0'; L++)
-	{
-		_putchar(L);
-	}
 	return (L);
 }
