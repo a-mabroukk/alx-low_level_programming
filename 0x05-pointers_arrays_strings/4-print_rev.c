@@ -10,7 +10,7 @@
 
 void print_rev(char *s)
 {
-	char rev = 1000;
+	char rev[1000];
 	int L, i, j;
 
 	while (*s != '\0')
