@@ -7,7 +7,7 @@
  *
  * Description: Write a function that returns the length of a string
  *
- * Return: value
+ * Return: Length
  */
 
 int _strlen(char *s)
@@ -15,7 +15,7 @@ int _strlen(char *s)
 	int L;
 
 	for (L = 0; *s[L] != '\0'; s++)
-		L++;
+		++L;
 
 	return (L);
 }
