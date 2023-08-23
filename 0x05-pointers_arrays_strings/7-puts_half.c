@@ -12,11 +12,10 @@ void puts_half(char *str)
 {
 	int L, i, n;
 
-	for (L = 0; str[L] != '\0'; str++)
+	for (L = 0; str[L] != '\0'; L++)
 	{
-		++L;
+		;
 	}
-	L--;
 	if (L % 2 == 0)
 	{
 		for (i = (L / 2) - 1; str[i] != '\0'; i++)
