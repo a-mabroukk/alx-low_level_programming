@@ -10,13 +10,9 @@
 
 void puts2(char *str)
 {
-	int L, i;
+	int i;
 
-	for (L = 0; *str != '\0'; str++)
-	{
-		++L;
-	}
-	for (i = 0; i < L; i++)
+	for (i = 0; *str != '\0'; i++)
 	{
 		if (i % 2 == 0)
 		{
