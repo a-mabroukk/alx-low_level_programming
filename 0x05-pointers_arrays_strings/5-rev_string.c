@@ -10,9 +10,10 @@
 
 void rev_string(char *s)
 {
-	int temp, L;
+	char temp;
 	int initial = 0;
-	int end;
+	int end = 0;
+	int L;
 
 	for (L = 0; *s != '\0'; s++)
 	{
