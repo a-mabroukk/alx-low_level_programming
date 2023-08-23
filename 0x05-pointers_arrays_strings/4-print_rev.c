@@ -16,10 +16,11 @@ void print_rev(char *s)
 	{
 		++L;
 	}
+	s--;
 	for (i = L; i > 0; i--)
 	{
 		_putchar(*s);
-		--s;
+		s--;
 	}
 	_putchar('\n');
 }
