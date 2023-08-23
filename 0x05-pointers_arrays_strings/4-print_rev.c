@@ -14,7 +14,7 @@ void print_rev(char *s)
 
 	for (L = 0; *s != '\0'; s++)
 	{
-		L++;
+		++L;
 	}
 	for (i = L; i < L; L--)
 	{
