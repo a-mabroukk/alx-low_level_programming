@@ -29,5 +29,4 @@ void rev_string(char *s)
 		initial++;
 		end--;
 	}
-	_putchar(*s);
 }
