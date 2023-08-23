@@ -10,13 +10,12 @@
 
 void puts_half(char *str)
 {
-	int L, i, n, half;
+	int L, i, n;
 
 	for (L = 0; *str != '\0'; str++)
 	{
 		++L;
 	}
-	half = L / 2;
 	if (L % 2 == 0)
 	{
 		for (i = L / 2; str[i] != '\0'; i++)
@@ -25,7 +24,7 @@ void puts_half(char *str)
 		}
 	}
 
-	while (L % 2 = 1)
+	while (L % 2 == 1)
 	{
 		for (n = (L - 1) / 2; str[n]; n++)
 		{
