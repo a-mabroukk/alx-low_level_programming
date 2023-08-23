@@ -10,9 +10,9 @@
 
 void puts2(char *str)
 {
-	int L, i, e;
+	int L, i, e = 0;
 
-	for (L = 0; *str != '\0'; s++)
+	for (L = 0; *str != '\0'; str++)
 	{
 		++L;
 	}
