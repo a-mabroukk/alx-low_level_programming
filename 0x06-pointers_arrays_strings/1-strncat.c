@@ -24,13 +24,12 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[L + i] = src[i];
+		dest[L] = src[i];
 		L++;
-		i++;
 	}
 	if (i < n)
 	{
-		dest[L + i] = '\0';
+		dest[L] = '\0';
 	}
 	return (dest);
 }
