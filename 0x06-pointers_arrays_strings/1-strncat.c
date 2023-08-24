@@ -30,7 +30,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	if (i < n)
 	{
-		dest[L + i] = '\0';
+		dest[L] = '\0';
 	}
 	return (dest);
 }
