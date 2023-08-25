@@ -29,6 +29,7 @@ char *string_toupper(char *m)
 				i++;
 				j++;
 			}
+		}
 	}
 	return (m);
 }
