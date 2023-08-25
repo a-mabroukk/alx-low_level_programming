@@ -16,8 +16,8 @@ char *cap_string(char *str)
 	char separator[] = {' ', ',', ';', '.', '!', '?', '"',
 		'(', ')', '{', '}', '\n', '\t', '\0'};
 
-	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] -= ('a' - 'A');
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] -= ('a' - 'A');
 	for (i = 1; str[i] != '\0'; i++)
 	{
 		for (j = 0; separator[j] != '\0'; j++)
