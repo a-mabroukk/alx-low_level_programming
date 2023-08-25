@@ -14,10 +14,6 @@ char *string_toupper(char *m)
 {
 	int i, j;
 
-	for (i = 0; m[i] != '\0'; i++)
-	{
-		;
-	}
 	for (m[i] = 'a'; m[i] <= 'z'; m[i]++)
 	{
 		for (m[j] = 'A'; m[j] <= 'Z'; m[j]++)
