@@ -24,6 +24,8 @@ char *string_toupper(char *m)
 			replace = m[j];
 			m[i] = replace;
 			m[j] = change;
+			i++;
+			j++;
 		}
 	}
 	return (m);
