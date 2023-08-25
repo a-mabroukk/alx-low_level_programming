@@ -24,6 +24,7 @@ void reverse_array(int *a, int n)
 			last = a[end];
 			a[i] = last;
 			a[end] = initial;
+			i++;
 		}
 	}
 }
