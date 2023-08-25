@@ -12,11 +12,11 @@
 
 char *string_toupper(char *m)
 {
-	int i, j;
+	int i, j = 0;
 
-	for (m[i] = 'a'; m[i] <= 'z'; m[i]++)
+	for (i = 0; m[i] != '\0'; i++)
 	{
-		for (m[j] = 'A'; m[j] <= 'Z'; m[j]++)
+		while (i = 'a' && i <= 'z')
 		{
 			int change, replace;
 
