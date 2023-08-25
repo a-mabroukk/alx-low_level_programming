@@ -13,7 +13,7 @@
 char *cap_string(char *str)
 {
 	int i, j;
-	int separator[14] = {' ', ',', ';', '.', '!', '?', '"',
+	int separator[] = {' ', ',', ';', '.', '!', '?', '"',
 		'(', ')', '{', '}', '\n', '\t', '\0'};
 
 	for (i = 0; str[i] != '\0'; i++)
