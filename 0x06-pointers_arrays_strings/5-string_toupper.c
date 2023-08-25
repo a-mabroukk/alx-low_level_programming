@@ -18,7 +18,7 @@ char *string_toupper(char *m)
 	{
 		for (j = 0; m[j] != '\0'; j++)
 		{
-			while (i = 'a' && i <= 'z')
+			while ((i = 'a' && i <= 'z') && (j = 'A' && j <= 'Z'))
 			{
 				change = m[i];
 				replace = m[j];
