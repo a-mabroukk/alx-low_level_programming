@@ -14,17 +14,16 @@ void reverse_array(int *a, int n)
 {
 	int end, i;
 
-	for (i = 0; i < n; i++)
+	end = n - 1;
+	while (i < end)
 	{
-		for (end = n - 1; i < end; end--)
-		{
-			int initial, last;
+		int initial, last;
 
-			initial	= a[i];
-			last = a[end];
-			a[i] = last;
-			a[end] = initial;
-			i++;
-		}
+		initial	= a[i];
+		last = a[end];
+		a[i] = last;
+		a[end] = initial;
+		i++;
+		end--;
 	}
 }
