@@ -16,11 +16,14 @@ char *rot13(char *str)
 	char ABC[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int j;
 
-	for (j = 0; j < 52; j++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str == abc[j])
+		for (j = 0; j < 52; j++)
 		{
-			str = ABC[j];
+			if (str[i] == abc[j])
+			{
+				str[i] = ABC[j];
+			}
 		}
 	}
 	return (str);
