@@ -26,8 +26,9 @@ char *rot13(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; abc[j] != '\0'; j++)
+		while (abc[j] != '\0' && str[i] != abc[j])
 		{
+			j++;
 			if (str[i] == abc[j])
 			{
 				str[i] = ABC[j];
