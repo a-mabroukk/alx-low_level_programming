@@ -14,7 +14,7 @@ char *rot13(char *str)
 {
 	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char ABC[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int j;
+	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
