@@ -23,6 +23,7 @@ char *leet(char *s)
 			if (s[j] == c[i])
 			{
 				s[j] = num[i];
+				j++;
 			}
 		}
 	}
