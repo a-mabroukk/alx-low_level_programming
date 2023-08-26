@@ -12,8 +12,8 @@
 
 char *rot13(char *str)
 {
-	char abc[] = " ";
-	char ABC[] = "ss";
+	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char ABC[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -26,6 +26,5 @@ char *rot13(char *str)
 			}
 		}
 	}
-	str[i] = '\0';
 	return (str);
 }
