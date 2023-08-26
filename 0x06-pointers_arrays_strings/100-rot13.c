@@ -22,18 +22,17 @@ char *rot13(char *str)
 		'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
 		'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
 		'J', 'K', 'L', 'M'};
-	int i, j;
+	int i, j = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		j = 0;
 		while (abc[j] != '\0' && str[i] != abc[j])
 		{
-			j++;
 			if (str[i] == abc[j])
 			{
 				str[i] = ABC[j];
 			}
+			j++;
 		}
 	}
 	return (str);
