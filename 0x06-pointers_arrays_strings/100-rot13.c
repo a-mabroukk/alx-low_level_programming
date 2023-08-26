@@ -26,5 +26,6 @@ char *rot13(char *str)
 			}
 		}
 	}
+	 str[i] = '\0';
 	return (str);
 }
