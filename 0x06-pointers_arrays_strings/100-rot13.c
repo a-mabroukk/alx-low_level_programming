@@ -26,6 +26,7 @@ char *rot13(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		j = 0;
 		while (abc[j] != '\0' && str[i] != abc[j])
 		{
 			j++;
