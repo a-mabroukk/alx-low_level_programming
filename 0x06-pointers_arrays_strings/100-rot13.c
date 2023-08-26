@@ -13,7 +13,7 @@
 char *rot13(char *str)
 {
 	char abc[] = " ";
-	char ABC[] = " ";
+	char ABC[] = "ss";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
