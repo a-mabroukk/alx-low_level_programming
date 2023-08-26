@@ -23,6 +23,7 @@ char *rot13(char *str)
 			if (str[i] == abc[j])
 			{
 				str[i] = ABC[j];
+				i++;
 			}
 		}
 	}
