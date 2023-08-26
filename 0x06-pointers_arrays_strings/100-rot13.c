@@ -12,13 +12,13 @@
 
 char *rot13(char *str)
 {
-	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char ABC[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *ABC[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; abc[j] != '\0'; j++)
 		{
 			if (str[i] == abc[j])
 			{
