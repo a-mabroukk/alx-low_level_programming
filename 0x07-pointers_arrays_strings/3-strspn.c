@@ -23,5 +23,5 @@ unsigned int _strspn(char *s, char *accept)
 			s[i] = accept[j];
 		}
 	}
-	return (s[i + j]);
+	return (i);
 }
