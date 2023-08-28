@@ -17,6 +17,7 @@ char *_strchr(char *s, char c)
 	if (c == *s)
 	{
 		s++;
+	else
 		return (s);
 	}
 	else if (*s == '\0')
