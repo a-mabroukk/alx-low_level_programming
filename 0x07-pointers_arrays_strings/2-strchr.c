@@ -15,18 +15,15 @@
 char *_strchr(char *s, char c)
 {
 	int i;
+	char *t;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (c == s[i])
 		{
-			c++;
-		}
-		else
-			return (s);
-		els if (s[i] == '\0')
-		{
-			return ('\0');
+			t = &s[i];
+			return (t);
 		}
 	}
+	return (0);
 }
