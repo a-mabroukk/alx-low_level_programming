@@ -27,9 +27,9 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	if (accept[j] == NULL)
+	if (s[i] == '\0')
 	{
 		return (s);
 	}
-	return (NULL);
+	return ('\0');
 }
