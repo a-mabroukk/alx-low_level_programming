@@ -9,8 +9,7 @@
  *
  * Description: Write a function that searches string for any of a set of byte
  *
- * Return: a pointer to the byte in s that matches one of the bytes in accept
- * , or NULL if no such byte is found
+ * Return: a pointer to the first occurrence of the character of s
  */
 
 char *_strpbrk(char *s, char *accept)
