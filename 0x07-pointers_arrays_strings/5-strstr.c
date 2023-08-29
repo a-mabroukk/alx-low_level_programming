@@ -22,8 +22,8 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (haystack[i] == needle[j])
 			{
-				return (&haystack[j]);
 				c++;
+				return (&haystack[j]);
 			}
 		}
 		if (needle[j] != haystack[i])
