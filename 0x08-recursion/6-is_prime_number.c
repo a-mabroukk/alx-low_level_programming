@@ -41,5 +41,5 @@ int _prime(int n, int p)
 
 int is_prime_number(int n)
 {
-	return (_prime(n, p));
+	return (_prime(n, 2));
 }
