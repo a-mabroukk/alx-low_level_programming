@@ -12,7 +12,7 @@
  * Return: the value
  */
 
-int _sqrt(int n, int s);
+int _sqrt(int n, int s)
 {
 	if ((s * s) < n)
 	{
