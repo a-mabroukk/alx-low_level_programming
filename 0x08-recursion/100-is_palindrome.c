@@ -76,4 +76,5 @@ int is_palindrome(char *s)
 	{
 		return (_palindrome_check(s, 0, _palindrome_length(s) - 1));
 	}
+	return (0);
 }
