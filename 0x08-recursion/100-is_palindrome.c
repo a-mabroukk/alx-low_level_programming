@@ -68,5 +68,12 @@ int _palindrome_length(char *s)
 
 int is_palindrome(char *s)
 {
-	return (_palindrome_check(s, 0, _palindrome_length(s) - 1));
+	if (!(*s))
+	{
+		return (1);
+	}
+	else
+	{
+		return (_palindrome_check(s, 0, _palindrome_length(s) - 1));
+	}
 }
