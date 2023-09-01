@@ -24,7 +24,7 @@ int _prime(int n, int p)
 	}
 	else
 	{
-		return (_prime(n, p - 1));
+		return (_prime(n, p + 1));
 	}
 }
 
