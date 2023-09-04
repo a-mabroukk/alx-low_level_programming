@@ -5,7 +5,7 @@
  *
  * @argc: the number of arguments passed to the program
  *
- * @arv: a one-dimensional array of stringsa
+ * @argv: a one-dimensional array of stringsa
  *
  * Description: Write a program that prints its name, followed by a new line
  *
