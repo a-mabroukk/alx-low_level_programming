@@ -21,6 +21,7 @@ char *_strdup(char *str)
 	{
 		;
 	}
+	size++;
 	if (str == NULL)
 	{
 		return (NULL);
@@ -34,5 +35,6 @@ char *_strdup(char *str)
 	{
 		s[i] = str[i];
 	}
+	s[i] = '\0';
 	return (s);
 }
