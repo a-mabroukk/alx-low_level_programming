@@ -8,6 +8,9 @@
  * @grid: double pointer
  *
  * @height: height of a grid
+ *
+ * Description: Write a function that frees a 2 dimensional grid previously
+ * created by your alloc_grid function
  */
 
 void free_grid(int **grid, int height)
@@ -16,10 +19,7 @@ void free_grid(int **grid, int height)
 
 	for (h = 0; h < height; h++)
 	{
-		while (h--)
-		{
-			free(grid[h]);
-			free(grid);
-		}
+		free(grid[h]);
+		free(grid);
 	}
 }
