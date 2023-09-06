@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		for (c = 0, ch = 0; c < (size1 + size2); c++)
 		{
-			if (c < size1);
+			if (c < size1)
 			{
 				str[c] = s1[c];
 				str[c] = s2[ch];
