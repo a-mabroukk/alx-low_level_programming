@@ -40,12 +40,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (c1 = 0; c1 < (size1 + size2 + n + 1); c1++)
+	for (c1 = 0; c1 < size1; c1++)
 	{
 		if (c1 < size1)
 			str[c1] = s1[c1];
 	}
-	for (c2 = 0; c2 < size2 && c2 < n; c2++)
+	for (c2 = 0; c2 < n; c2++)
 	{
 		str[c1] = s1[c2];
 		c2++;
