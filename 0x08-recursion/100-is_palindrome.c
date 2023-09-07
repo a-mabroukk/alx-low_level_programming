@@ -26,7 +26,7 @@ int _palindrome_check(char *s, int n, int r)
 	}
 	else if (n < r + 1)
 	{
-		return (_palindrome_check(s, n + 1, r + 1));
+		return (_palindrome_check(s, n + 1, r - 1));
 	}
 	else
 	{
