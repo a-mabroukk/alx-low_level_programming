@@ -31,10 +31,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		;
 	}
-	if (n >= size2)
+	if (n > size2)
 	{
-		str = malloc((sizeof(*s1) * size1) + (sizeof(s2) * size2) + n + 1);
+		n = size2;
 	}
+	str = malloc((sizeof(*s1) * size1) + (sizeof(s2) * size2) + n + 1);
 	if (str == NULL)
 	{
 		return (NULL);
