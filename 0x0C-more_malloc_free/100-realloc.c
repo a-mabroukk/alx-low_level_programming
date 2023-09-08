@@ -20,9 +20,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	void *mem;
 	unsigned int c;
 
-	mem = malloc(new_size);
 	if (new_size > old_size)
 	{
+		mem = malloc(new_size);
+		if (mem == NULL)
+		{
+			return (mem);
+		}
 		for (c = 0; c <= old_size && c < new_size; c++)
 		{
 			*((char *)mem + c) = *((char *)ptr + c);
