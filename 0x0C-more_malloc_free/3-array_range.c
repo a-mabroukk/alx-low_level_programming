@@ -28,7 +28,6 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	v = max - min;
 	for (e = 0; min <= max ; e++)
 	{
 		array[e] = min;
