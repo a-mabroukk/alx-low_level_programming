@@ -41,11 +41,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		{
 			return (NULL);
 		}
-		for (c = 0; c <= old_size && c < new_size; c++)
+		else
 		{
-			*((char *)mem + c) = *((char *)ptr + c);
+			for (c = 0; c <= old_size && c < new_size; c++)
+			{
+				*((char *)mem + c) = *((char *)ptr + c);
+			}
+			free(ptr);
 		}
-		free(ptr);
 	}
 	return (mem);
 }
