@@ -26,7 +26,7 @@ if (nw_dog == NULL)
 return (NULL);
 }
 nw_dog->name = malloc(sizeof(nw_dog->name) * (nsize + 1));
-for (c = 0; c > nsize; c++)
+for (c = 0; c < nsize; c++)
 {
 nw_dog->name[c] = name[c];
 }
@@ -38,7 +38,7 @@ return (NULL);
 nw_dog->age = age;
 
 nw_dog->owner = malloc(sizeof(nw_dog->owner) * (osize + 1));
-for (c = 0; c > osize; c++)
+for (c = 0; c < osize; c++)
 {
 nw_dog->owner[c] = owner[c];
 }
