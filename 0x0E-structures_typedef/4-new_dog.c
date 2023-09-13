@@ -26,27 +26,27 @@ if (nw_dog == NULL)
 return (NULL);
 }
 nw_dog->name = malloc(sizeof(nw_dog->name) * (nsize + 1));
-for (c = 0; c <= nsize; c++)
-{
-nw_dog->name[c] = name[c];
-}
 if (nw_dog->name == NULL)
 {
 free(nw_dog);
 return (NULL);
 }
+for (c = 0; c <= nsize; c++)
+{
+nw_dog->name[c] = name[c];
+}
 nw_dog->age = age;
 
 nw_dog->owner = malloc(sizeof(nw_dog->owner) * (osize + 1));
-for (c = 0; c <= osize; c++)
-{
-nw_dog->owner[c] = owner[c];
-}
 if (nw_dog->owner == NULL)
 {
 free(nw_dog->name);
 free(nw_dog);
 return (NULL);
+}
+for (c = 0; c <= osize; c++)
+{
+nw_dog->owner[c] = owner[c];
 }
 return (nw_dog);
 }
