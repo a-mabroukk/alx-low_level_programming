@@ -18,7 +18,7 @@ return (0);
 va_start(ptr, n);
 for (c = 0; c < n; c++)
 {
-sum += va_arg(ptr, const unsigned int);
+sum += va_arg(ptr, unsigned int);
 }
 va_end(ptr);
 return (sum);
