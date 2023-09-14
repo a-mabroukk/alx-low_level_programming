@@ -9,7 +9,7 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int sum = 0;
+int sum = 0;
 unsigned int c;
 va_list ptr;
 va_start(ptr, n);
