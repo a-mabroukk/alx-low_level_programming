@@ -15,13 +15,10 @@ if (n == 0)
 {
 return (0);
 }
-else
-{
 va_start(ptr, n);
 for (c = 0; c < n; c++)
 {
 sum += va_arg(ptr, unsigned int);
-}
 }
 va_end(ptr);
 return (sum);
