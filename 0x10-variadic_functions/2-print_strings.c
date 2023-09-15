@@ -29,7 +29,7 @@ else
 {
 printf("%s", string);
 }
-if (c < n - 1)
+if (c < i - 1)
 {
 printf("%s", separator);
 }

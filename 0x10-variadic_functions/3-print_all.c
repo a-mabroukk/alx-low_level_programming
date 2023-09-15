@@ -39,11 +39,10 @@ string = va_arg(ptr, char *);
 if (string == NULL)
 {
 printf("(nil)");
+break;
 }
-else
-{
 printf("%s%s", string, separator);
-}
+break;
 }
 c++;
 }
