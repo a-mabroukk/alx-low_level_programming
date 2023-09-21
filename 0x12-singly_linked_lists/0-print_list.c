@@ -15,7 +15,7 @@ printf("[0] (nil)\n");
 ptr = h;
 while (ptr != NULL)
 {
-printf("[%d] %s\n", ptr->len, ptr->str);
+printf("[%u] %s\n", ptr->len, ptr->str);
 counter++;
 ptr = ptr->next;
 }
