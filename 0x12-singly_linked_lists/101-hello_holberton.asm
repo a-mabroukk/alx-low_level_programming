@@ -9,4 +9,4 @@ main:
         mov         eax, 0
         ret
 message:
-        db         'Hello, Holberton'\n, 0
+        db         "Hello, Holberton\n", 0
