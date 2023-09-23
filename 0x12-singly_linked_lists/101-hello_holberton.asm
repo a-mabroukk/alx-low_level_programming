@@ -7,4 +7,4 @@ main:
         call        printf
         mov         eax, 0
 section
-        message db         'Hello, Holberton\n', 0
+        message db  'Hello, Holberton\n', 0
