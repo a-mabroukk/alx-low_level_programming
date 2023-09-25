@@ -17,7 +17,7 @@ for (c = 0; c < index; c++)
 {
 if (head == NULL)
 {
-return(NULL);
+return (NULL);
 }
 node = head;
 if (node == NULL)
