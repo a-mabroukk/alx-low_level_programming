@@ -15,9 +15,9 @@ return;
 temp = *head;
 while (temp != NULL)
 {
-temp = node;
 node = temp->next;
 free(temp);
+temp = node;
 }
 *head = NULL;
 }
