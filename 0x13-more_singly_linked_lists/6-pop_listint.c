@@ -13,7 +13,7 @@ listint_t *temp;
 int i;
 if (*head == NULL)
 {
-return(0);
+return (0);
 }
 else
 {
