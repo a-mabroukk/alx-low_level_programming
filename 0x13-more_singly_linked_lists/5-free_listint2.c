@@ -12,9 +12,9 @@ listint_t *node, *temp;
 temp = *head;
 while (temp != NULL)
 {
-node = temp->next;
-free(temp);
 temp = node;
+free(temp);
+node = temp->next;
 }
 *head = NULL;
 }
