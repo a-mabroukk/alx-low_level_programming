@@ -24,7 +24,10 @@ if (node == NULL)
 {
 return (NULL);
 }
+else
+{
 node = node->next;
 }
 return (node);
+}
 }
