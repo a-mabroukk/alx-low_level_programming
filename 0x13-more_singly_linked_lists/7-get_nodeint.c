@@ -15,6 +15,10 @@ listint_t *node;
 unsigned int c;
 for (c = 0; c < index; c++)
 {
+if (head == NULL)
+{
+return(NULL);
+}
 node = head;
 if (node == NULL)
 {
