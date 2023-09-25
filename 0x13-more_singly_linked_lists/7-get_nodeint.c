@@ -11,7 +11,7 @@
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *node;
+listint_t *node = head;
 unsigned int c;
 if (head == NULL)
 {
@@ -19,15 +19,11 @@ return (NULL);
 }
 for (c = 0; c < index; c++)
 {
-node = head;
 if (node == NULL)
 {
 return (NULL);
 }
-else
-{
 node = node->next;
 }
 return (node);
-}
 }
