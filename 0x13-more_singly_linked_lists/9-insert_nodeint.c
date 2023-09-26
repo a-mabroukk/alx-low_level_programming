@@ -39,6 +39,7 @@ return (NULL);
 }
 ptr = ptr->next;
 }
+ptr2->next = ptr->next;
 ptr->next = ptr2;
 return (ptr2);
 }
