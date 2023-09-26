@@ -18,7 +18,7 @@ unsigned int position;
 ptr2 = malloc(sizeof(listint_t));
 if (ptr2 == NULL)
 {
-return(NULL);
+return (NULL);
 }
 ptr2->n = n;
 ptr2->next = NULL;
