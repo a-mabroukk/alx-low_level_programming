@@ -32,6 +32,5 @@ curr = curr->next;
 }
 prev->next = curr->next;
 free(curr);
-curr = NULL;
 return (1);
 }
