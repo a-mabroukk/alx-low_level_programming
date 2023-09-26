@@ -35,10 +35,9 @@ return (-1);
 }
 ptr = ptr->next;
 }
-ptr->next = ptr2;
+ptr2 = ptr->next;
 ptr2->next = ptr->next;
 free(ptr2);
-ptr2 = NULL;
 }
 return (1);
 }
