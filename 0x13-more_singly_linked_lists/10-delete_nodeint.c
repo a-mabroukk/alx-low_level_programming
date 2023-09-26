@@ -15,16 +15,15 @@ listint_t *ptr = *head;
 listint_t *ptr2 = NULL;
 unsigned int position;
 
-if (ptr == NULL)
+if (ptr2 == NULL)
 {
 return (-1);
 }
 if (index == 0)
 {
-ptr2->next = ptr;
-*head = ptr2;
+ptr2 = *head;
 *head = (*head)->next;
-free(ptr);
+free(ptr2);
 return (1);
 }
 for (position = 0; position < index - 1; position++)
@@ -36,7 +35,7 @@ return (-1);
 ptr = ptr->next;
 }
 ptr2->next = ptr->next;
-ptr->next = ptr2;
 free(ptr2);
+ptr->next = ptr2;
 return (1);
 }
