@@ -24,7 +24,6 @@ ptr2->n = n;
 ptr2->next = NULL;
 if (idx == 0)
 {
-ptr2->next = ptr;
 *head = ptr2;
 return (ptr2);
 }
