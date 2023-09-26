@@ -25,7 +25,7 @@ ptr = *head;
 *head = (*head)->next;
 free(ptr);
 }
-for (position = 0; position < index - 1; position--)
+for (position = 0; position < index - 1; position++)
 {
 if (ptr == NULL)
 {
