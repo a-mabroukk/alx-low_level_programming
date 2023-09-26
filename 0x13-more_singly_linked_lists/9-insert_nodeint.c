@@ -32,7 +32,7 @@ for (position = 0; position < idx - 1; position++)
 {
 if (ptr == NULL)
 {
-return (NULL);
+return (-1);
 }
 ptr = ptr->next;
 }
