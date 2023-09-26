@@ -18,7 +18,7 @@ unsigned int position;
 ptr2 = malloc(sizeof(listint_t));
 if (ptr2 == NULL)
 {
-return (NULL);
+return(NULL);
 }
 ptr2->n = n;
 ptr2->next = NULL;
@@ -32,11 +32,11 @@ for (position = 0; position < idx - 1; position++)
 {
 if (ptr == NULL)
 {
-return (-1);
+return (NULL);
 }
 ptr = ptr->next;
 }
 ptr2->next = ptr->next;
 ptr->next = ptr2;
-return (1);
+return (ptr2);
 }
