@@ -19,6 +19,8 @@ if (ptr == NULL)
 {
 return (-1);
 }
+else
+{
 if (index == 0)
 {
 ptr = *head;
@@ -33,8 +35,11 @@ return (-1);
 }
 ptr = ptr->next;
 }
+ptr->next = ptr2;
 ptr2->next = ptr->next;
 free(ptr2);
-ptr->next = ptr2;
+ptr2 = NULL;
+}
 return (1);
 }
+
