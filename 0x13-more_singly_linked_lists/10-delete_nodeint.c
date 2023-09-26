@@ -11,31 +11,27 @@
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *ptr = *head;
-listint_t *ptr2 = NULL;
+listint_t *prev = *head;
+listint_t *curr = *head;
 unsigned int position;
-
-if (ptr == NULL)
+if (curr == NULL)
 {
 return (-1);
 }
-if (index == 0)
-{
-ptr = *head;
-*head = (*head)->next;
-free(ptr);
+*head = curr->next;
+free(curr);
 return (1);
-}
 for (position = 0; position < index - 1; position++)
 {
-if (ptr == NULL)
+if (prev == NULL)
 {
 return (-1);
 }
-ptr2 = ptr->next;
+prev = curr;
+curr = curr->next;
 }
-ptr->next = ptr2->next;
-free(ptr2);
-ptr2 = ptr->next;
+prev->next = curr->next;
+free(curr);
+curr = NULL;
 return (1);
 }
