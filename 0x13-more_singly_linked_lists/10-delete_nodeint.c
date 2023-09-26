@@ -21,6 +21,7 @@ return (-1);
 }
 if (index == 0)
 {
+ptr2->next = ptr;
 *head = ptr2;
 *head = (*head)->next;
 free(ptr);
@@ -34,8 +35,8 @@ return (-1);
 }
 ptr = ptr->next;
 }
-ptr2 = ptr->next;
-ptr->next = ptr2->next;
+ptr2->next = ptr->next;
+ptr->next = ptr2;
 free(ptr2);
 return (1);
 }
