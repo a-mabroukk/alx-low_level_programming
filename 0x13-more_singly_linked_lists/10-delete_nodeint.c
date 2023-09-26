@@ -36,6 +36,6 @@ ptr2 = ptr->next;
 }
 ptr->next = ptr2->next;
 free(ptr2);
- ptr2 = ptr->next;
+ptr2 = ptr->next;
 return (1);
 }
