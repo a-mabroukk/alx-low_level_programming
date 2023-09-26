@@ -28,10 +28,6 @@ ptr2->next = ptr;
 *head = ptr2;
 return (ptr2);
 }
-else
-{
-return (NULL);
-}
 for (position = 0; position < idx - 1; position++)
 {
 if (ptr == NULL)
