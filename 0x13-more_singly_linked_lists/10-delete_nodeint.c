@@ -33,7 +33,7 @@ return (-1);
 curr = curr->next;
 prev = curr;
 }
-prev->next = curr->next;
 free(curr);
+prev->next = curr->next;
 return (1);
 }
