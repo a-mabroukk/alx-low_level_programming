@@ -26,9 +26,9 @@ return (1);
 }
 for (position = 0; position < index - 1; position++)
 {
-prev = curr;
 curr = curr->next;
-if (prev == NULL)
+prev = curr;
+if (curr == NULL)
 {
 return (-1);
 }
