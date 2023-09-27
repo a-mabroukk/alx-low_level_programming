@@ -27,10 +27,6 @@ return (1);
 curr = *head;
 for (position = 0; position < index - 1; position++)
 {
-if (curr == NULL)
-{
-return (-1);
-}
 prev = curr;
 curr = curr->next;
 }
