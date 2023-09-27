@@ -38,6 +38,6 @@ curr = curr->next;
 }
 prev = curr;
 prev->next = curr->next;
-free(curr);
+free(prev);
 return (1);
 }
