@@ -26,12 +26,12 @@ return (1);
 }
 for (position = 0; position < index - 1; position++)
 {
-curr = curr->next;
-prev = curr;
 if (curr == NULL)
 {
 return (-1);
 }
+prev = curr;
+curr = curr->next;
 }
 prev->next = curr->next;
 free(curr);
