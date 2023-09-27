@@ -27,11 +27,11 @@ return (1);
 for (position = 0; position < index - 1; position++)
 {
 prev = curr;
+curr = curr->next;
 if (prev == NULL)
 {
 return (-1);
 }
-curr = curr->next;
 }
 prev->next = curr->next;
 free(curr);
