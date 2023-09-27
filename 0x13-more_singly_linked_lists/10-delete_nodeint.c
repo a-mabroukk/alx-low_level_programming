@@ -30,10 +30,10 @@ if (curr == NULL)
 {
 return (-1);
 }
-prev = curr;
 curr = curr->next;
 }
+prev = curr;
 prev->next = curr->next;
-free(prev);
+free(curr);
 return (1);
 }
