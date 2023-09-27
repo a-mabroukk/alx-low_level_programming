@@ -28,10 +28,13 @@ curr = *head;
 for (position = 0; position < index - 1; position++)
 {
 if (curr != NULL)
-prev = curr;
-curr = curr->next;
-}
+{
 prev->next = curr->next;
 free(curr);
 return (1);
+}
+prev = curr;
+curr = curr->next;
+}
+return (-1);
 }
