@@ -26,7 +26,7 @@ return (1);
 }
 for (position = 0; position < index - 1; position++)
 {
-if (curr != NULL)
+if (position == index)
 {
 prev->next = curr->next;
 free(curr);
