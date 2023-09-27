@@ -24,16 +24,17 @@ if (index == 0)
 free(curr);
 return (1);
 }
+curr = *head;
 for (position = 0; position < index - 1; position++)
 {
-if (curr == NULL)
+if (position == index)
 {
-return (-1);
-}
 prev->next = curr->next;
+free(curr);
+return (1);
 }
 prev = curr;
 curr = curr->next;
-free(curr);
-return (1);
+}
+return (-1);
 }
