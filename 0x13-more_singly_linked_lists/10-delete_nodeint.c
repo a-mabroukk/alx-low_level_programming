@@ -27,14 +27,14 @@ return (1);
 curr = *head;
 for (position = 0; position < index - 1; position++)
 {
-if (position == index)
+if (curr == NULL)
 {
-prev->next = curr->next;
-free(curr);
-return (1);
+return (-1);
 }
 prev = curr;
 curr = curr->next;
 }
-return (-1);
+prev->next = curr->next;
+free(curr);
+return (1);
 }
