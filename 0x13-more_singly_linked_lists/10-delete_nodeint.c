@@ -32,8 +32,8 @@ return (-1);
 }
 prev = curr;
 curr = curr->next;
-prev->next = curr->next;
-free(curr);
 }
+prev->next = curr->next;
+free(prev);
 return (1);
 }
