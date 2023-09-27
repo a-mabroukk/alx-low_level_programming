@@ -30,7 +30,7 @@ return (1);
 }
 for (position = 0; position < index - 1; position++)
 {
-if (curr == NULL)
+if (curr == NULL || curr->next)
 {
 return (-1);
 }
