@@ -24,7 +24,6 @@ if (index == 0)
 free(curr);
 return (1);
 }
-curr = *head;
 for (position = 0; position < index - 1; position++)
 {
 if (curr != NULL)
