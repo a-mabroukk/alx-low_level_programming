@@ -26,14 +26,14 @@ return (1);
 }
 for (position = 0; position < index - 1; position++)
 {
-if (curr->next == NULL)
+if (curr == NULL)
 {
 return (-1);
 }
+prev->next = curr->next;
+}
 prev = curr;
 curr = curr->next;
-}
-prev->next = curr->next;
 free(curr);
 return (1);
 }
