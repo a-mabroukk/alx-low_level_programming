@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-    unsigned long int n;
+unsigned long int n;
 
 n = 1024;
 set_bit(&n, 5);
