@@ -25,7 +25,7 @@ if (filename == NULL)
 {
 return (0);
 }
-fd = open("filename", O_RDONLY);
+fd = open("filename", O_RDWR);
 if (fd == -1)
 {
 free(s);
