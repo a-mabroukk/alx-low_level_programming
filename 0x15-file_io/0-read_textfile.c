@@ -31,7 +31,7 @@ if (fd == -1)
 return (0);
 }
 sz = read(fd, s, letters);
-wd = write(fd, s, sz);
+wd = write(STDOUT_FILENO, s, sz);
 close(fd);
 return (wd);
 }
