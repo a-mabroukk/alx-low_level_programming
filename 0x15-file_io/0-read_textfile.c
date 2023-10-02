@@ -16,7 +16,7 @@ int fd, wd;
 ssize_t sz;
 char *s;
 
-s = malloc(sizeof(letters));
+s = malloc(sizeof(char) * letters);
 if (s == NULL)
 {
 return (0);
@@ -25,7 +25,7 @@ if (filename == NULL)
 {
 return (0);
 }
-fd = open("filename", O_RDONLY);
+fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
 free(s);
