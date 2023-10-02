@@ -16,7 +16,7 @@ int fd, wd;
 size_t sz;
 char *s;
 
-s = malloc(sizeof(char) * letters);
+s = malloc(sizeof(letters));
 if (s == NULL)
 {
 return (0);
@@ -28,6 +28,7 @@ return (0);
 fd = open("filename", O_RDONLY);
 if (fd == -1)
 {
+free(s);
 return (0);
 }
 sz = read(fd, s, letters);
