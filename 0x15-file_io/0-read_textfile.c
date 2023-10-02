@@ -16,7 +16,7 @@ int fd, wd;
 size_t sz;
 char *s;
 
-s = malloc(sizeof(letters));
+s = malloc(sizeof(char) * letters);
 if (s == NULL)
 {
 return (0);
