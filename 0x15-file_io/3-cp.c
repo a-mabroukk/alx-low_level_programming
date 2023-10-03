@@ -1,12 +1,13 @@
 #include "main.h"
-
+#define USAGE "Usage: cp file_from file_to\n"
+#define ERR_NOREAD "Error: Can't read from file %s\n"
+#define PERMISSION (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+#define ERR_NOWRITE "Error: Can't write to %s\n"
+#define ERR_NOCLOSE "Error: Can't close fd %d\n"
 /**
 *main - Entry ponit
-*
 *@argc: number of argument
-*
 *@argv: is an array of C-style strings
-*
 *Return: value
 */
 int main(int argc, char *argv[])
@@ -25,8 +26,7 @@ if (file_from == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
-S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSION);
 if (file_to == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -48,5 +48,6 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from), exit(100);
 if (close(file_to) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to), exit(100);
-}return (0);
+}
+return (0);
 }
