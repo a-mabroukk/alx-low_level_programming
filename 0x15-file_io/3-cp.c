@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 int file_from, file_to;
-int b1 = 1024, b2 = 0;
+int b1, b2;
 char buf[1024];
 if (argc != 3)
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
