@@ -20,24 +20,24 @@ exit(97);
 file_from = open(argv[1], O_RDONLY);
 if (file_from == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from file file_from %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
 file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (file_to == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to file_to %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(file_from), exit(99);
 }
 while (b1 == 1024)
 {
 b1 = read(file_from, buf, 1024);
 if (b1 == -1)
-dprintf(STDERR_FILENO, "Error: Can't read from file file_from %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 b2 = write(file_to, buf, b1);
 if (b2 < b1)
-dprintf(STDERR_FILENO, "Error: Can't write to file_to %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 if (close(file_from) == -1)
