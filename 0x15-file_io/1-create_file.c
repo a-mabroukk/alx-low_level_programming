@@ -28,10 +28,10 @@ if (fd == -1)
 return (-1);
 }
 sz = write(fd, text_content, strlen(text_content));
-close(fd);
 if (sz < 0)
 {
 return (-1);
 }
+close(fd);
 return (1);
 }
