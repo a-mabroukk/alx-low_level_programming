@@ -10,10 +10,10 @@
 *@argv: is an array of C-style strings
 *Return: value
 */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 int file_from, file_to;
-int b1, b2;
+ssize_t b1;
 char buf[1024];
 if (argc != 3)
 {
@@ -30,24 +30,24 @@ file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSION);
 if (file_to == -1)
 {
 dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]);
-close(file_from), exit(99);
+exit(99);
 }
-b1 = read(file_from, buf, 1024);
-while (b1 == 1024)
+while ((b1 = read(file_from, buf, 1024)) > 0)
 {
+if (write(file_to, buf, b1) != b1)
+dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 if (b1 == -1)
 dprintf(STDERR_FILENO, ERR_NOREAD, argv[1]), exit(98);
-b2 = write(file_to, buf, b1);
-if (b2 < b1)
-dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 }
-if (close(file_from) == -1)
+file_from = close(file_from);
+file_to = close(file_to);
+if (file_from)
 {
 dprintf(STDERR_FILENO, ERR_NOCLOSE, file_from), exit(100);
 }
-if (close(file_to) == -1)
+if (file_to)
 {
 dprintf(STDERR_FILENO, ERR_NOCLOSE, file_to), exit(100);
 }
-return (0);
+return (EXIT_SUCCESS);
 }
