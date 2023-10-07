@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 int file_from, file_to;
 ssize_t b1;
-char buf[READ_BUF_SIZE];
+char buf[1024];
 if (argc != 3)
 {
 dprintf(STDERR_FILENO, USAGE);
@@ -32,7 +32,7 @@ if (file_to == -1)
 dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]);
 exit(99);
 }
-while ((b1 = read(file_from, buf, READ_BUF_SIZE)) > 0)
+while ((b1 = read(file_from, buf, 1024)) > 0)
 {
 if (write(file_to, buf, b1) != b1)
 dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
