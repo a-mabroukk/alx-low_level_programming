@@ -10,7 +10,7 @@
 *@argv: is an array of C-style strings
 *Return: value
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int file_from, file_to;
 ssize_t b1;
