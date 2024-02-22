@@ -12,7 +12,7 @@ all: ${OBJ}
 
 .PHONY: clean oclean fclean re
 clean:
-	$(RM) -v *~ ${NAME}
+	$(RM) *~ ${NAME}
 
 oclean:
 		$(RM) $(OBJ)
