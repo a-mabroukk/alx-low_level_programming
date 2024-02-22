@@ -15,10 +15,10 @@ clean:
 	$(RM) -v *~ ${NAME}
 
 oclean:
-		$(RM) -v *.o
+		$(RM) -v $(OBJ)
 
 fclean:
-		$(RM) -v *.o ${NAME}
+		$(RM) -v $(OBJ) ${NAME}
 
 re:
 	make -t
