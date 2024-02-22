@@ -18,7 +18,7 @@ oclean:
 		$(RM) -v $(OBJ)
 
 fclean:
-		$(RM) -v $(OBJ) ${NAME}
+		$(RM) -v $~(OBJ) ${NAME}
 
 re:
 	oclean all
