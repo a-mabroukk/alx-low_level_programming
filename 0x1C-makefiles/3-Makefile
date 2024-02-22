@@ -15,10 +15,10 @@ clean:
 	$(RM) -v *~ ${NAME}
 
 oclean:
-		$(RM) -v $(OBJ)
+		$(RM) $(OBJ)
 
 fclean:
-		$(RM) -v $~(OBJ) ${NAME}
+		$(RM) *~ $(OBJ) ${NAME}
 
 re:
 	oclean all
