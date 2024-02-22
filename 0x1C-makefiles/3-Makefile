@@ -21,4 +21,4 @@ fclean:
 		$(RM) -v $(OBJ) ${NAME}
 
 re:
-	make -t
+	oclean all
